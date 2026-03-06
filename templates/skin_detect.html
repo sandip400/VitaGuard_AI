@@ -1467,7 +1467,7 @@
 
       try {
         // ── REAL ML CALL ──
-        const response = await fetch("http://localhost:5000/skin-predict", {
+        const response = await fetch("/skin-predict", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ image: state.imageDataUrl })

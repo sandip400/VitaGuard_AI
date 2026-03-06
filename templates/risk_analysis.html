@@ -3268,7 +3268,7 @@
         Income: 5,                          // default: middle income
       };
 
-      fetch('http://localhost:5000/predict', {
+      fetch('/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
